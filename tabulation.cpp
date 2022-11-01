@@ -11,12 +11,11 @@ double Tabul(double leftval, double rightval, double step)
     int check = 0;
     for (double x = leftval; x <= rightval; x += step)
     {
-        y = sqrt(x * x - 4 * log(x)); //2 род Mine
-        //y = x / (x + 1); //2 род
-        //y = 2 * ((abs(x + 3)) / (x + 3)) * x + 6;//неустранимая 1 рода
-        //y = sin(x) / x;//1 род
-        //y = sqrt(x * x + 12 - log(x * x));//tanya
-        //if (y >= 0) //убирает not a number
+        y = sqrt(x * x - 4 * log(x)); //2 Mine
+        //y = x / (x + 1); //2 
+        //y = 2 * ((abs(x + 3)) / (x + 3)) * x + 6;//neustr  1 
+        //y = sin(x) / x;//1 
+        //y = sqrt(x * x + 12 - log(x * x));//other test 
             {
             std::cout << "x: " << x << " y: " << y << std::endl;
             if (y >= INFINITY)//discontinuity
